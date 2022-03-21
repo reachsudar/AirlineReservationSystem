@@ -25,8 +25,7 @@ Feature:
       Given A List of Passengers
       And I Perform DELETE operation
 
-  Scenario:
-      Given A new list of pasengers
+
 
 
 
