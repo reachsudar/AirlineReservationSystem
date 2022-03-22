@@ -1,5 +1,6 @@
 package TestSteps;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,6 +13,9 @@ import static io.restassured.RestAssured.when;
 import static org.hamcrest.Matchers.*;
 import static io.restassured.RestAssured.given;
 public class MyStepdefs {
+
+
+
     @Given("A List of Passengers")
     public void aListOfPassengers() {
 
@@ -19,7 +23,7 @@ public class MyStepdefs {
 
     @And("I Perform GET for the Passenger {string}")
     public void iPerformGETForThePassenger(String postNumber) {
-        when().get(String.format("http://localhost:8080/passengers/%s", postNumber)).
+        ValidatableResponse validatableResponse=when().get(String.format("http://localhost:8080/passengers/%s", postNumber)).
                 then().body("firstName", Matchers.is("Philip"));
     }
 
