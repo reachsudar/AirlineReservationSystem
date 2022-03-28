@@ -1,4 +1,4 @@
-package TestSteps;
+package com.example.AirlineReservationDemo.TestSteps;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
@@ -9,9 +9,13 @@ import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
 import org.hamcrest.Matchers;
 import org.json.simple.JSONObject;
+import org.springframework.boot.test.context.SpringBootTest;
+
 import static io.restassured.RestAssured.when;
 import static org.hamcrest.Matchers.*;
 import static io.restassured.RestAssured.given;
+
+@SpringBootTest(classes=com.example.AirlineReservationDemo.AirlineReservationSystem.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class MyStepdefs {
 
 

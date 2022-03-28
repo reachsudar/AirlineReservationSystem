@@ -1,4 +1,4 @@
-package TestSteps;
+package com.example.AirlineReservationDemo.TestSteps;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
