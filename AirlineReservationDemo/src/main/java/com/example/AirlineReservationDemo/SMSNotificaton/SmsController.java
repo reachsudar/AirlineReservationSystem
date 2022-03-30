@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 public class SmsController {
 
     private final SmsService smsService;
-
     @Autowired
     public SmsController(SmsService smsService)
     {

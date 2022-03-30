@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 public class SmsService {
 
     private final SmsSender SmsSender;
-
     @Autowired
     public SmsService(@Qualifier("twilio") TwilioSmsSender twilioSmsSender)
     {

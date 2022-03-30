@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Getter
 @Setter
 public class TwilioConfiguration {
+
     private String accountSid;
     private String authToken;
     private String trialNumber;
