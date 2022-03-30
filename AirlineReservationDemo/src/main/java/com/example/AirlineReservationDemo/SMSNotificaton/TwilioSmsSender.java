@@ -16,7 +16,6 @@ public class TwilioSmsSender implements SmsSender{
     {
         this.twilioConfiguration=twilioConfiguration;
     }
-
     @Override
     public void sendSms(SmsRequest smsRequest) {
 

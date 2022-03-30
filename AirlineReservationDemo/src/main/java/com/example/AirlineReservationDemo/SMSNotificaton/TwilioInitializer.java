@@ -20,8 +20,6 @@ public class TwilioInitializer {
                 twilioConfiguration.getAuthToken()
         );
 
-
-
     }
 
 }

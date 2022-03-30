@@ -7,7 +7,6 @@ import lombok.Getter;
 @Getter
 public class SmsRequest {
 
-
     private final String phoneNumber; //destination
 
     private final String message;
@@ -17,7 +16,6 @@ public class SmsRequest {
         this.phoneNumber = phoneNumber;
         this.message = message;
     }
-
     @Override
     public String toString() {
         return "SmsRequest{" +

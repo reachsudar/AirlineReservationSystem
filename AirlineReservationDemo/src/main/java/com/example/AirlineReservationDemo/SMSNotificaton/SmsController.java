@@ -12,12 +12,14 @@ public class SmsController {
     @Autowired
     public SmsController(SmsService smsService)
     {
+
         this.smsService = smsService;
     }
 
     @PostMapping
     public void setSmsService(@RequestBody SmsRequest smsRequest)
     {
+
         smsService.sendSms(smsRequest);
     }
 
